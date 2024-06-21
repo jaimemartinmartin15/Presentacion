@@ -55,11 +55,11 @@ export class HomeComponent implements OnInit {
 
   // carousels
   public LEARN_TILES = [
-    { link: 'comprende-rxjs', topic: 'Frontend', subtopic: 'RxJS', img: 'assets/home/frontendrxjscard.png' },
-    { link: 'redes/dns', topic: 'Redes', subtopic: 'DNS', img: 'assets/home/redesdnscard.png' },
-    { link: 'bases-de-datos/sql', topic: 'Bases de datos', subtopic: 'SQL', img: 'assets/home/basesdedatossqlcard.png' },
+    { link: '/comprende-rxjs', topic: 'Frontend', subtopic: 'RxJS', img: 'assets/home/frontendrxjscard.png' },
+    { link: '/redes/dns', topic: 'Redes', subtopic: 'DNS', img: 'assets/home/redesdnscard.png' },
+    { link: '/bases-de-datos/sql', topic: 'Bases de datos', subtopic: 'SQL', img: 'assets/home/basesdedatossqlcard.png' },
     {
-      link: 'comandos',
+      link: '/comandos',
       topic: 'Sistemas operativos',
       subtopic: 'Comandos',
       img: 'assets/home/sistemasoperativoscomandoscard.png',

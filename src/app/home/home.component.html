@@ -49,7 +49,7 @@
   <h1 class="title">Aprender</h1>
 
   <app-carousel [showElementsAtSameTime]="3">
-    <a #carouselItem class="carousel-item" *ngFor="let tile of LEARN_TILES" [routerLink]="tile.link">
+    <a #carouselItem class="carousel-item" *ngFor="let tile of LEARN_TILES" [attr.href]="tile.link">
       <img [src]="tile.img" alt="image">
       <div>
         <span>{{tile.topic}}</span>
