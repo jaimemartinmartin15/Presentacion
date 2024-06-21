@@ -10,7 +10,7 @@ export const HOME_ROUTES: Routes = [
     data: {
       metaTags: {
         description: `Me llamo Jaime, tengo ${calculateCurrentAge(new Date(1996, 10, 15))} años y soy ingeniero informático.`,
-        keywords: ['jaime martin martin', 'ingeniero informático'],
+        keywords: ['jaime', 'martin', 'ingeniero', 'informático'],
       },
     },
   },

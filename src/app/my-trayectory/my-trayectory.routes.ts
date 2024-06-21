@@ -10,7 +10,7 @@ export const MY_TRAYECTORY_ROUTES: Routes = [
     data: {
       metaTags: {
         description: 'Conoce cual ha sido mi trayectoria profesional hasta el día de hoy y en que proyectos he trabajado.',
-        keywords: ['jaime martin martin', 'curriculum', 'trayectoria'],
+        keywords: ['jaime', 'martin', 'curriculum', 'trayectoria', 'ingeniero', 'informatico'],
       },
     },
   },
