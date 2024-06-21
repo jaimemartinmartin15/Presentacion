@@ -1,5 +1,5 @@
-name: Deploy Webpage
-run-name: Deploy jaimeelingeniero.es to AWS S3
+name: Build And Deploy
+run-name: Deploy Presentacion to AWS S3
 
 on:
   workflow_dispatch: # allow manual trigger
@@ -12,11 +12,11 @@ jobs:
     timeout-minutes: 15
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Setup node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
           registry-url: https://npm.pkg.github.com/
           scope: "@jaimemartinmartin15"
       - name: Install
@@ -25,12 +25,12 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.GH_REGISTRY_TOKEN }}
       - name: Generate icons
         run: |
-          mkdir -p src/svg/generated
+          mkdir -p src/app/svg-icons
           npm run icons
       - name: Build
         run: npm run build
       - name: Set AWS credentials
-        uses: aws-actions/configure-aws-credentials@v2
+        uses: aws-actions/configure-aws-credentials@v4
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
@@ -38,7 +38,7 @@ jobs:
       - name: Deploy
         run: |
           aws --version
-          aws s3 sync ./dist/jaimeelingeniero \
-                      s3://jaimeelingeniero.es \
-                      --delete \
-                      --exclude assets/no-cached/pages-english/tenses/verbs.json
+          aws s3 sync ./dist/presentacion/browser \
+                      s3://jaimeelingeniero.es/presentacion \
+                      --delete
+          aws s3 cp ./dist/presentacion/3rdpartylicenses.txt s3://jaimeelingeniero.es/presentacion/3rdpartylicenses.txt
