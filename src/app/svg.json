@@ -1,0 +1,30 @@
+{
+    "inputDirs": ["src/app/svg"],
+    "outputDir": "src/app/svg-icons",
+    "prefix": "app",
+    "modules": [
+        {
+            "name": "TechnologiesSvg",
+            "files": [
+                "angular-logo",
+                "html-logo",
+                "css-logo",
+                "javascript-logo",
+                "java-logo",
+                "spring-boot-logo",
+                "git-logo",
+                "docker-logo",
+                "kubernetes-logo",
+                "lit-element-logo"
+            ]
+        },
+        {
+            "name": "ContactIconsSvg",
+            "files": [
+                "gmail-logo",
+                "github-logo",
+                "linked-in-logo"
+            ]
+        }
+    ]
+}

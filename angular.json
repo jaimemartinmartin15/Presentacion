@@ -41,17 +41,30 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "stylePreprocessorOptions": {
+              "includePaths": ["./node_modules"]
+            },
             "outputPath": "dist/presentacion",
             "index": "src/index.html",
             "browser": "src/main.ts",
+            "namedChunks": true,
             "polyfills": [
               "zone.js"
             ],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              "src/assets/favicons",
+              {
+                "glob": "**/*",
+                "input": "src/app/home/assets",
+                "output": "/assets/home/"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/app/my-trayectory/assets",
+                "output": "/assets/my-trayectory/"
+              }
             ],
             "styles": [
               "src/styles.scss"
@@ -93,6 +106,12 @@
             }
           },
           "defaultConfiguration": "development"
+        },
+        "icons": {
+          "builder": "@jaimemartinmartin15/jei-devkit-angular-builders:generate-icons",
+          "options": {
+            "configFile": "src/app/svg.json"
+          }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
