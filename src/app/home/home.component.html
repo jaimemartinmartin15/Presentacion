@@ -1,0 +1,103 @@
+<section class="intro">
+  <div class="figure-and-title">
+    <figure class="figure" [@rotateProfilePicture]="stateRotateProfilePicture"
+      (@rotateProfilePicture.done)="allowRotateProfilePicture = true">
+      <div class="figure__picture" (click)="changeProfilePicture()">
+        <img [src]="profilePictures[profilePictureIndex]" alt="foto perfil" class="figure__picture__img">
+      </div>
+    </figure>
+
+    <h1 class="title">
+      Jaime
+      <br>
+      Ingeniero informático
+    </h1>
+  </div>
+
+  <svg class="waves" [attr.viewBox]="waveViewBox">
+    <path [attr.d]="wavePath"></path>
+  </svg>
+</section>
+
+<section class="about-me">
+  <h1 class="title">Sobre mí</h1>
+
+  <div class="presentation">
+    <div class="intro-text">
+      <p>
+        Hola 👋
+      </p>
+
+      <p>
+        Me llamo Jaime, tengo {{years}} años y soy ingeniero informático.
+      </p>
+
+      <p>
+        Desde que empecé la carrera en la universidad de Salamanca programar y desarrollar es algo que me apasiona.
+      </p>
+
+      <p>
+        Por eso he decidido aventurarme con este sitio web, para aprender y compartir mi experiencia.
+      </p>
+    </div>
+
+    <a class="app-link-button" routerLink="mi-trayectoria">Ver trayectoria 📚</a>
+  </div>
+</section>
+
+<section class="learning">
+  <h1 class="title">Aprender</h1>
+
+  <app-carousel [showElementsAtSameTime]="3">
+    <a #carouselItem class="carousel-item" *ngFor="let tile of LEARN_TILES" [routerLink]="tile.link">
+      <img [src]="tile.img" alt="image">
+      <div>
+        <span>{{tile.topic}}</span>
+        <span>{{tile.subtopic}}</span>
+      </div>
+    </a>
+  </app-carousel>
+</section>
+
+<section class="personal-projects">
+  <h1 class="title">Proyectos personales</h1>
+
+  <app-carousel [showElementsAtSameTime]="2">
+    <a #carouselItem class="carousel-item" href="https://lluvias.jaimeelingeniero.es">
+      <img src="assets/home/lluvias.png" alt="image">
+      <div>
+        <span>Lluvias</span>
+      </div>
+    </a>
+    <a #carouselItem class="carousel-item" href="https://puntuaciones.jaimeelingeniero.es">
+      <img src="assets/home/puntuaciones.png" alt="image">
+      <div>
+        <span>Puntuaciones</span>
+      </div>
+    </a>
+  </app-carousel>
+</section>
+
+<footer class="contact">
+  <div class="contact-list">
+    <!-- linkedin -->
+    <a class="linked-in app-no-break" href="https://www.linkedin.com/in/jaime-mart%C3%ADn-mart%C3%ADn-2a298016b/">
+      <svg appLinkedInLogoSvg viewBox="0 0 100 100"></svg>
+      Linked in
+    </a>
+
+    <!-- github -->
+    <a class="github app-no-break" href="https://github.com/jaimemartinmartin15">
+      <svg appGithubLogoSvg viewBox="0 0 100 100"></svg>
+      Github
+    </a>
+
+    <!-- gmail -->
+    <address>
+      <a class="email app-no-break" href="mailto:jaimemartinmartin15@gmail.com">
+        <svg appGmailLogoSvg viewBox="0 0 100 100"></svg>
+        jaimemartinmartin15&#64;gmail.com
+      </a>
+    </address>
+  </div>
+</footer>
