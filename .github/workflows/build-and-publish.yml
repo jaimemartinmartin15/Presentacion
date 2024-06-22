@@ -39,6 +39,14 @@ jobs:
         run: |
           aws --version
           aws s3 sync ./dist/presentacion/browser \
-                      s3://jaimeelingeniero.es/presentacion \
-                      --delete
-          aws s3 cp ./dist/presentacion/3rdpartylicenses.txt s3://jaimeelingeniero.es/presentacion/3rdpartylicenses.txt
+                      s3://jaimeelingeniero.es \
+                      --delete \
+                      --exclude sitemap.xml \
+                      --exclude robots.txt \
+                      --exclude 'comprende-rxjs/*' \
+                      --exclude 'bases-de-datos/*' \
+                      --exclude 'redes/*' \
+                      --exclude 'comandos/*' \
+                      --exclude 'ingles/*'
+                      --exclude 'lista-de-viaje/*'
+          aws s3 cp ./dist/presentacion/3rdpartylicenses.txt s3://jaimeelingeniero.es/3rdpartylicenses.txt
