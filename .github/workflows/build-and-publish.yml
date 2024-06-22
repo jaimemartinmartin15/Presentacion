@@ -47,6 +47,6 @@ jobs:
                       --exclude 'bases-de-datos/*' \
                       --exclude 'redes/*' \
                       --exclude 'comandos/*' \
-                      --exclude 'ingles/*'
+                      --exclude 'ingles/*' \
                       --exclude 'lista-de-viaje/*'
           aws s3 cp ./dist/presentacion/3rdpartylicenses.txt s3://jaimeelingeniero.es/3rdpartylicenses.txt
