@@ -48,5 +48,6 @@ jobs:
                       --exclude 'redes/*' \
                       --exclude 'comandos/*' \
                       --exclude 'ingles/*' \
-                      --exclude 'lista-de-viaje/*'
+                      --exclude 'lista-de-viaje/*' \
+                      --exclude 'creador-iconos-svg'
           aws s3 cp ./dist/presentacion/3rdpartylicenses.txt s3://jaimeelingeniero.es/3rdpartylicenses.txt
