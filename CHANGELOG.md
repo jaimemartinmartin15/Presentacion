@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.1.0
+
+Added Creador iconos svg to personal projects section.
+
+Optimized some images.
+
 ## 1.0.1
 
 Change deploy folder and configuration.
