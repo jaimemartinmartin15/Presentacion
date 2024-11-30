@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.2.0
+
+Added Codigo QR to personal projects section.
+
+Updated my-trayectory. Added tech leader section.
+
 ## 1.1.0
 
 Added Creador iconos svg to personal projects section.
