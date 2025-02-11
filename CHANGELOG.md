@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.3.0
+
+Added Comparar Ficheros to personal projects section.
+
 ## 1.2.0
 
 Added Codigo QR to personal projects section.
