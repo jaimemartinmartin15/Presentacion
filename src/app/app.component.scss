@@ -1,0 +1,21 @@
+@import "@jaimemartinmartin15/jei-devkit-angular-shared/styles/colors";
+
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100vmin;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  padding: 20px;
+  font-size: 1.3rem;
+  background-color: $color-orange;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
