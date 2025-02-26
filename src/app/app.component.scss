@@ -9,13 +9,28 @@
 nav {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 80px;
-  padding: 20px;
-  font-size: 1.3rem;
   background-color: $color-orange;
 
   a {
     color: white;
     text-decoration: none;
+    font-size: 1.3rem;
+    padding: 20px;
+
+    &:has(svg) {
+      padding: 10px;
+    }
+
+    &.logo-anchor {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+
+      .jame-logo-svg {
+        width: 40px;
+      }
+    }
   }
 }

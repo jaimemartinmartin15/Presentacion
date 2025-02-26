@@ -2,11 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { RestoreScrollService, SeoService } from '@jaimemartinmartin15/jei-devkit-angular-shared';
+import { JameLogoSvgComponent } from './svg-icons/jame-logo.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, RouterLink],
+  imports: [CommonModule, RouterOutlet, RouterLink, JameLogoSvgComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
