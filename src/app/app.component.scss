@@ -18,15 +18,21 @@ nav {
     text-decoration: none;
     font-size: 1.3rem;
     padding: 20px;
+    transition: transform 0.2s;
 
-    &:has(svg) {
-      padding: 10px;
+    &:hover {
+      transform: scale(1.1);
     }
 
     &.logo-anchor {
       display: flex;
       gap: 10px;
       align-items: center;
+      padding: 10px;
+
+      &:hover {
+        transform: scale(1.06);
+      }
 
       .jame-logo-svg {
         width: 40px;
