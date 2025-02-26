@@ -4,11 +4,15 @@
     justify-content: center;
     align-items: center;
     gap: 150px;
+    padding: 40px;
+
+    --profile-photo-width: 350px;
+    --title-font-size: 4.7rem;
 }
 
 .profile-photo {
     position: relative;
-    width: 350px;
+    width: var(--profile-photo-width);
 
     img {
         width: 100%;
@@ -26,7 +30,7 @@
 }
 
 h1 {
-    font-size: 4.7rem;
+    font-size: var(--title-font-size);
 }
 
 .contact-list {
@@ -37,5 +41,27 @@ h1 {
 
     svg {
         width: 50px;
+    }
+}
+
+@media (max-width: 1366px) {
+    :host {
+        --profile-photo-width: 250px;
+        --title-font-size: 4rem;
+    }
+}
+
+@media (max-width: 1135px) {
+    :host {
+        flex-direction: column;
+        gap: 0;
+        text-align: center;
+
+        --profile-photo-width: 180px;
+        --title-font-size: 2.5rem;
+    }
+
+    .contact-list {
+        justify-content: center;
     }
 }
