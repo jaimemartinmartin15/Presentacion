@@ -1,12 +1,18 @@
 <nav>
-  <a routerLink="" class="logo-anchor">
-    <svg appJameLogoSvg class="jame-logo-svg" viewBox="0 0 100 100"></svg>
-    <span>jaimeelingeniero</span>
+  <a routerLink="" class="logo-and-title-anchor">
+    <svg appJameLogoSvg class="logo-svg" viewBox="0 0 100 100"></svg>
+    <span class="logo-title-1">jaimeelingeniero</span>
   </a>
-  <a routerLink="sobre-mi">Sobre mí</a>
-  <a routerLink="mi-trayectoria">Mi trayectoria</a>
-  <a routerLink="aprender">Aprender</a>
-  <a routerLink="mis-proyectos">Mis proyectos</a>
+  <a routerLink="" class="just-title-anchor">
+    <span class="logo-title-2">jaimeelingeniero</span>
+  </a>
+  <div class="collapsible-links collapsible-links--collapsed" #menu>
+    <a routerLink="sobre-mi">Sobre mí</a>
+    <a routerLink="mi-trayectoria">Mi trayectoria</a>
+    <a routerLink="aprender">Aprender</a>
+    <a routerLink="mis-proyectos">Mis proyectos</a>
+  </div>
+  <svg appBurgerSvg class="burger" viewBox="0 0 100 100" (click)="toggleMenu(menu)"></svg>
 </nav>
 
 <router-outlet></router-outlet>
