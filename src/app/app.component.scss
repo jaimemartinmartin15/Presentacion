@@ -3,6 +3,13 @@
 :host {
   display: flex;
   flex-direction: column;
-  height: 100vmin;
+  min-height: 100vmin;
+  position: relative;
+}
+
+app-top-navigation{
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 
