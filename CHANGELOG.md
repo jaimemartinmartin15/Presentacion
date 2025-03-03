@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 1.4.0
+
+Redesign home page and my trayectory. Created new pages
+
+- 'sobre-mi'
+- 'aprender'
+- 'mis-proyectos'
+
 ## 1.3.0
 
 Added Comparar Ficheros to personal projects section.
