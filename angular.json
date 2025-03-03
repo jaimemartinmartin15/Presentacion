@@ -64,6 +64,16 @@
                 "glob": "**/*",
                 "input": "src/app/my-trayectory/assets",
                 "output": "/assets/my-trayectory/"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/app/my-projects/assets",
+                "output": "/assets/my-projects/"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/app/learning/assets",
+                "output": "/assets/learning/"
               }
             ],
             "styles": [

@@ -1,0 +1,15 @@
+@import "@jaimemartinmartin15/jei-devkit-angular-shared/styles/colors";
+
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vmin;
+  position: relative;
+}
+
+app-top-navigation{
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+

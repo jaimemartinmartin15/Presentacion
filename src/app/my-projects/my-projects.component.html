@@ -1,0 +1,13 @@
+<h1>Mis proyectos</h1>
+
+<ul>
+  <li *ngFor="let project of myProjects">
+    <app-box-card class="card">
+      <a [href]="project.href">
+        <img [src]="project.thumbnail" alt="">
+
+        <span class="title">{{project.title}}</span>
+      </a>
+    </app-box-card>
+  </li>
+</ul>

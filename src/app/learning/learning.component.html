@@ -1,0 +1,16 @@
+<h1>Aprender</h1>
+
+<ul>
+  <li *ngFor="let learning of learnings">
+    <app-box-card class="card">
+      <a [href]="learning.href">
+        <img [src]="learning.thumbnail" alt="">
+
+        <div class="content">
+          <span class="subject">{{learning.subject}}</span>
+          <span class="lesson">{{learning.lesson}}</span>
+        </div>
+      </a>
+    </app-box-card>
+  </li>
+</ul>

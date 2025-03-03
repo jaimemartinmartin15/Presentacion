@@ -20,7 +20,7 @@ export class MyTrayectoryComponent implements OnInit, OnDestroy {
 
   public ngOnInit(): void {
     // exception because of the sticky header
-    this.viewport.setOffset([0, 70]);
+    this.viewport.setOffset([0, 135]);
   }
 
   public toggleNavigationBar() {
