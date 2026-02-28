@@ -52,5 +52,6 @@ jobs:
                       --exclude 'lista-de-viaje/*' \
                       --exclude 'creador-iconos-svg/*' \
                       --exclude 'codigo-qr/*' \
-                      --exclude 'comparar-ficheros/*'
+                      --exclude 'comparar-ficheros/*' \
+                      --exclude 'horario-de-trabajo/*'
           aws s3 cp ./dist/presentacion/3rdpartylicenses.txt s3://jaimeelingeniero.es/3rdpartylicenses.txt
