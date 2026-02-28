@@ -16,6 +16,11 @@ export const LIST_OF_PROJECTS: Project[] = [
     title: "Puntuaciones"
   },
   {
+    href: "https://listas.jaimeelingeniero.es",
+    thumbnail: "./assets/my-projects/listas.png",
+    title: "Listas"
+  },
+  {
     href: "/creador-iconos-svg",
     thumbnail: "./assets/my-projects/creadoriconossvg.png",
     title: "Creador de iconos svg"
