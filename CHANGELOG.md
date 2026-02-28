@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 1.4.2
+
+Updated about me.
+
+Added listas project.
+
+Exclude horario-de-trabajo in workflow.
+
+## 1.4.1
+
+Optimize images.
+
 ## 1.4.0
 
 Redesign home page and my trayectory. Created new pages
