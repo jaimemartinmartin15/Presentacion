@@ -54,5 +54,6 @@ jobs:
                       --exclude 'codigo-qr/*' \
                       --exclude 'comparar-ficheros/*' \
                       --exclude 'horario-de-trabajo/*' \
-                      --exclude 'idiotizador/*'
+                      --exclude 'idiotizador/*' \
+                      --exclude 'como-resolver-el-cubo-de-rubik/*'
           aws s3 cp ./dist/presentacion/3rdpartylicenses.txt s3://jaimeelingeniero.es/3rdpartylicenses.txt
