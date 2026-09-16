@@ -10,12 +10,8 @@
                 "html-logo",
                 "css-logo",
                 "javascript-logo",
-                "java-logo",
-                "spring-boot-logo",
                 "git-logo",
-                "docker-logo",
-                "kubernetes-logo",
-                "lit-element-logo"
+                "docker-logo"
             ]
         },
         {
