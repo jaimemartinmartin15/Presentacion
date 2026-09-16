@@ -52,7 +52,6 @@ jobs:
                       --exclude 'redes/*' \
                       --exclude 'comandos/*' \
                       --exclude 'ingles/*' \
-                      --exclude 'lista-de-viaje/*' \
                       --exclude 'creador-iconos-svg/*' \
                       --exclude 'codigo-qr/*' \
                       --exclude 'comparar-ficheros/*' \
