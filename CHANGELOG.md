@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 2.0.0
+
+- Migration to angular 22.
+- Added `como-resolver-el-cubo-de-rubik` project.
+
 ## 1.4.2
 
 Updated about me.
