@@ -1,26 +1,24 @@
 {
-    "inputDirs": ["src/app/svg"],
-    "outputDir": "src/app/svg-icons",
-    "prefix": "app",
-    "modules": [
-        {
-            "name": "TechnologiesSvg",
-            "files": [
-                "angular-logo",
-                "html-logo",
-                "css-logo",
-                "javascript-logo",
-                "git-logo",
-                "docker-logo"
-            ]
-        },
-        {
-            "name": "ContactIconsSvg",
-            "files": [
-                "gmail-logo",
-                "github-logo",
-                "linked-in-logo"
-            ]
-        }
-    ]
+  "inputDirs": ["~@jaimemartinmartin15/svg-icons/svg/"],
+  "outputDir": "src/svg-output",
+  "prefix": "app",
+  "modules": [
+    {
+      "name": "TechnologiesSvg",
+      "files": [
+        "angular-logo",
+        "aws",
+        "azure-pipelines",
+        "css-logo",
+        "git-logo",
+        "html-logo",
+        "javascript-logo",
+        "lit-element-logo"
+      ]
+    },
+    {
+      "name": "ContactIconsSvg",
+      "files": ["gmail-logo", "github-logo", "linked-in-logo"]
+    }
+  ]
 }

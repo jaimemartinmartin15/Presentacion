@@ -1,16 +1,18 @@
 <h1>Aprender</h1>
 
 <ul>
-  <li *ngFor="let learning of learnings">
-    <app-box-card class="card">
-      <a [href]="learning.href">
-        <img [src]="learning.thumbnail" alt="">
+  @for (learning of learnings; track learning.href) {
+    <li>
+      <jei-box-card class="card">
+        <a [href]="learning.href">
+          <img [src]="learning.thumbnail" alt="" />
 
-        <div class="content">
-          <span class="subject">{{learning.subject}}</span>
-          <span class="lesson">{{learning.lesson}}</span>
-        </div>
-      </a>
-    </app-box-card>
-  </li>
+          <div class="content">
+            <span class="subject">{{ learning.subject }}</span>
+            <span class="lesson">{{ learning.lesson }}</span>
+          </div>
+        </a>
+      </jei-box-card>
+    </li>
+  }
 </ul>

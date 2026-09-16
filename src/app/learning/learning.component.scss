@@ -1,4 +1,4 @@
-@import "@jaimemartinmartin15/jei-devkit-angular-shared/styles/colors";
+@use "@jaimemartinmartin15/jei-devkit-angular-shared/styles/colors";
 
 :host {
   display: block;
@@ -50,7 +50,7 @@ ul {
         align-items: center;
 
         .subject {
-          color: $color-orange;
+          color: colors.$color-orange;
         }
       }
     }

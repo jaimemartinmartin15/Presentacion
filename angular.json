@@ -39,7 +39,7 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:application",
+          "builder": "@angular/build:application",
           "options": {
             "stylePreprocessorOptions": {
               "includePaths": ["./node_modules"]
@@ -48,9 +48,7 @@
             "index": "src/index.html",
             "browser": "src/main.ts",
             "namedChunks": true,
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
@@ -76,9 +74,7 @@
                 "output": "/assets/learning/"
               }
             ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "styles": ["src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -106,7 +102,7 @@
           "defaultConfiguration": "production"
         },
         "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
+          "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
               "buildTarget": "presentacion:build:production"
@@ -123,10 +119,11 @@
             "configFile": "src/app/svg.json"
           }
         },
-        "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n",
+        "aws-checks": {
+          "builder": "@jaimemartinmartin15/jei-devkit-angular-builders:aws-checks",
           "options": {
-            "buildTarget": "presentacion:build"
+            "distFolder": "dist/presentacion/browser",
+            "serverPath": "sobre-mi"
           }
         }
       }

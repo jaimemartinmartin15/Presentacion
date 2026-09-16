@@ -1,10 +1,8 @@
-import { CommonModule } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-bullets',
   standalone: true,
-  imports: [CommonModule],
   templateUrl: './bullets.component.html',
   styleUrls: ['./bullets.component.scss'],
 })

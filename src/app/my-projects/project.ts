@@ -23,17 +23,17 @@ export const LIST_OF_PROJECTS: Project[] = [
   {
     href: '/creador-iconos-svg',
     thumbnail: './assets/my-projects/creadoriconossvg.png',
-    title: 'Creador de iconos svg',
+    title: 'Editor SVG',
   },
   {
     href: '/codigo-qr',
     thumbnail: './assets/my-projects/codigoqr.png',
-    title: 'Generador de códigos qr',
+    title: 'Código QR',
   },
   {
     href: '/comparar-ficheros',
     thumbnail: './assets/my-projects/compararficheros.png',
-    title: 'App para comparar ficheros',
+    title: 'Comparar ficheros',
   },
   {
     href: '/como-resolver-el-cubo-de-rubik',

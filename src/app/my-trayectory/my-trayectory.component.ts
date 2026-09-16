@@ -1,14 +1,15 @@
-import { CommonModule, ViewportScroller } from '@angular/common';
+import { ViewportScroller } from '@angular/common';
 import { Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { ContactIconsSvgModule } from '../svg-icons/contact-icons-svg.module';
-import { TechnologiesSvgModule } from '../svg-icons/technologies-svg.module';
+import { BurgerSvgComponent } from '../../svg-output/burger.component';
+import { ContactIconsSvgModule } from '../../svg-output/contact-icons-svg.module';
+import { TechnologiesSvgModule } from '../../svg-output/technologies-svg.module';
 import { BulletsComponent } from './bullets/bullets.component';
 
 @Component({
   selector: 'app-my-trayectory',
   standalone: true,
-  imports: [CommonModule, RouterLink, TechnologiesSvgModule, ContactIconsSvgModule, BulletsComponent],
+  imports: [RouterLink, BulletsComponent, TechnologiesSvgModule, ContactIconsSvgModule, BurgerSvgComponent],
   templateUrl: './my-trayectory.component.html',
   styleUrls: ['./my-trayectory.component.scss'],
 })

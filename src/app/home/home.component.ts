@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { ContactIconsSvgModule } from '../svg-icons/contact-icons-svg.module';
+import { ContactIconsSvgModule } from '../../svg-output/contact-icons-svg.module';
 
 @Component({
   selector: 'app-home',

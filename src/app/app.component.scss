@@ -1,5 +1,3 @@
-@import "@jaimemartinmartin15/jei-devkit-angular-shared/styles/colors";
-
 :host {
   display: flex;
   flex-direction: column;
@@ -7,7 +5,7 @@
   position: relative;
 }
 
-app-top-navigation{
+jei-top-navigation{
   position: sticky;
   top: 0;
   z-index: 2;

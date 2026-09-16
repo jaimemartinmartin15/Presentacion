@@ -1,3 +1,11 @@
-<span *ngFor="let bullet of fullBullets" class="bullet"></span>
-<span *ngFor="let bullet of halfBullets" class="bullet bullet--half"></span>
-<span *ngFor="let bullet of emptyBullets" class="bullet bullet--empty"></span>
+@for (bullet of fullBullets; track $index) {
+  <span class="bullet"></span>
+}
+
+@for (bullet of halfBullets; track $index) {
+  <span class="bullet bullet--half"></span>
+}
+
+@for (bullet of emptyBullets; track $index) {
+  <span class="bullet bullet--empty"></span>
+}

@@ -1,4 +1,5 @@
-@import "@jaimemartinmartin15/jei-devkit-angular-shared/styles/colors";
+@use "@jaimemartinmartin15/jei-devkit-angular-shared/styles/colors";
+@use "@jaimemartinmartin15/jei-devkit-angular-shared/styles/links";
 
 :host {
     display: flex;
@@ -71,13 +72,13 @@ figure {
 
     article {
         h1 {
-            color: $color-orange;
+            color: colors.$color-orange;
             font-size: 1rem;
             margin-top: 50px;
         }
 
         hr {
-            border: 1px solid $color-orange;
+            border: 1px solid colors.$color-orange;
         }
     }
 
@@ -88,7 +89,7 @@ figure {
         h2 {
             font-size: 1.5rem;
             margin: 5px 0;
-            color: $color-blue;
+            color: colors.$color-blue;
         }
 
         .location,
@@ -184,6 +185,7 @@ figure {
         min-height: 25px;
 
         .burger {
+            width: 50px;
             position: absolute;
             top: 20px;
             right: 20px;

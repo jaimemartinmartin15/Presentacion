@@ -12,25 +12,25 @@
       rel="noopener"
       target="_blank"
     >
-      <svg appLinkedInLogoSvg viewBox="0 0 100 100"></svg>
+      <svg appLinkedInLogoSvg></svg>
     </a>
 
     <a
-      class="github app-no-break"
+      class="github"
       href="https://github.com/jaimemartinmartin15"
       rel="noopener"
       target="_blank"
     >
-      <svg appGithubLogoSvg viewBox="0 0 100 100"></svg>
+      <svg appGithubLogoSvg></svg>
     </a>
 
     <a
-      class="email app-no-break"
+      class="email"
       href="mailto:jaimemartinmartin15@gmail.com"
       rel="noopener"
       target="_blank"
     >
-      <svg appGmailLogoSvg viewBox="0 0 100 100"></svg>
+      <svg appGmailLogoSvg></svg>
     </a>
   </address>
 </figure>
@@ -38,18 +38,16 @@
 <main class="cv">
   <nav>
     <button (click)="toggleNavigationBar()" class="burger">
-      <div></div>
-      <div></div>
-      <div></div>
+      <svg appBurgerSvg></svg>
     </button>
 
     <div class="links" (click)="toggleNavigationBar()" #links>
-      <a class="app-link" routerLink="./" fragment="sumario">Sumario</a>
-      <a class="app-link" routerLink="./" fragment="experiencia">Experiencia</a>
-      <a class="app-link" routerLink="./" fragment="educacion">Educación</a>
-      <a class="app-link" routerLink="./" fragment="idiomas">Idiomas</a>
-      <a class="app-link" routerLink="./" fragment="tecnologias">Tecnologías</a>
-      <a class="app-link" routerLink="./" fragment="referencias">Referencias</a>
+      <a class="jei-link" routerLink="./" fragment="sumario">Sumario</a>
+      <a class="jei-link" routerLink="./" fragment="experiencia">Experiencia</a>
+      <a class="jei-link" routerLink="./" fragment="educacion">Educación</a>
+      <a class="jei-link" routerLink="./" fragment="idiomas">Idiomas</a>
+      <a class="jei-link" routerLink="./" fragment="tecnologias">Tecnologías</a>
+      <a class="jei-link" routerLink="./" fragment="referencias">Referencias</a>
     </div>
   </nav>
 
@@ -366,33 +364,43 @@
 
     <ul>
       <li>
-        <svg appHtmlLogoSvg viewBox="0 0 100 100"></svg>
+        <svg appHtmlLogoSvg></svg>
         <span>HTML 5</span>
       </li>
 
       <li>
-        <svg appCssLogoSvg viewBox="0 0 100 100"></svg>
+        <svg appCssLogoSvg></svg>
         <span>CSS 3</span>
       </li>
 
       <li>
-        <svg appJavascriptLogoSvg viewBox="0 0 100 100"></svg>
+        <svg appJavascriptLogoSvg></svg>
         <span>JavaScript</span>
       </li>
 
       <li>
-        <svg appLitElementLogoSvg viewBox="0 0 100 100"></svg>
+        <svg appLitElementLogoSvg></svg>
         <span>LitElement</span>
       </li>
 
       <li>
-        <svg appAngularLogoSvg viewBox="0 0 100 100"></svg>
+        <svg appAngularLogoSvg></svg>
         <span>Angular</span>
       </li>
 
       <li>
-        <svg appGitLogoSvg viewBox="0 0 100 100"></svg>
+        <svg appGitLogoSvg></svg>
         <span>Git</span>
+      </li>
+
+      <li>
+        <svg appAzurePipelinesSvg></svg>
+        <span>Azure Pipelines</span>
+      </li>
+
+      <li>
+        <svg appAwsSvg></svg>
+        <span>AWS</span>
       </li>
     </ul>
   </article>

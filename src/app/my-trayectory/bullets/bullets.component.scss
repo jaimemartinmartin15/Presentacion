@@ -1,4 +1,4 @@
-@import "@jaimemartinmartin15/jei-devkit-angular-shared/styles/colors";
+@use "@jaimemartinmartin15/jei-devkit-angular-shared/styles/colors";
 
 :host {
   display: inline-flex;
@@ -11,8 +11,8 @@
   height: 15px;
   position: relative;
   border-radius: 50%;
-  border: 2px solid $color-blue;
-  background-color: $color-orange;
+  border: 2px solid colors.$color-blue;
+  background-color: colors.$color-orange;
 
   &--half::after {
     content: "";
