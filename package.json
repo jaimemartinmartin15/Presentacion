@@ -19,7 +19,6 @@
     "@angular/platform-browser": "^22.1.6",
     "@angular/platform-browser-dynamic": "^22.1.6",
     "@angular/router": "^22.1.6",
-    "@jaimemartinmartin15/jei-devkit-angular-builders": "5.0.0",
     "@jaimemartinmartin15/jei-devkit-angular-shared": "^8.1.1",
     "@jaimemartinmartin15/svg-icons": "^1.10.0",
     "rxjs": "~7.8.0",
@@ -30,6 +29,7 @@
     "@angular/build": "^22.1.8",
     "@angular/cli": "^22.1.8",
     "@angular/compiler-cli": "^22.1.6",
+    "@jaimemartinmartin15/jei-devkit-angular-builders": "5.0.0",
     "typescript": "~6.0.2"
   }
 }
