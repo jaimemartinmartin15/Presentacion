@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2.0.2
+
+- Updated version of aws-checks builder.
+
+## 2.0.1
+
+- Use new aws-checks builder.
+
 ## 2.0.0
 
 - Migration to angular 22.
