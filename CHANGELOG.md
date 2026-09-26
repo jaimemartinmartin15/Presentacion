@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2.0.3
+
+- Updated deploy-url to avoid redirection.
+
 ## 2.0.2
 
 - Updated version of aws-checks builder.

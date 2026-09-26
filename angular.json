@@ -52,26 +52,30 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "src/assets/favicons",
+              {
+                "glob": "**/*",
+                "input": "src/assets/favicons",
+                "output": "/presentacion/assets/favicons/"
+              },
               {
                 "glob": "**/*",
                 "input": "src/app/home/assets",
-                "output": "/assets/home/"
+                "output": "/presentacion/assets/home/"
               },
               {
                 "glob": "**/*",
                 "input": "src/app/my-trayectory/assets",
-                "output": "/assets/my-trayectory/"
+                "output": "/presentacion/assets/my-trayectory/"
               },
               {
                 "glob": "**/*",
                 "input": "src/app/my-projects/assets",
-                "output": "/assets/my-projects/"
+                "output": "/presentacion/assets/my-projects/"
               },
               {
                 "glob": "**/*",
                 "input": "src/app/learning/assets",
-                "output": "/assets/learning/"
+                "output": "/presentacion/assets/learning/"
               }
             ],
             "styles": ["src/styles.scss"],
