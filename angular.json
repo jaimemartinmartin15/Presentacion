@@ -122,8 +122,20 @@
         "aws-checks": {
           "builder": "@jaimemartinmartin15/jei-devkit-angular-builders:aws-checks",
           "options": {
+            "serverSegment": "presentacion",
             "distFolder": "dist/presentacion/browser",
-            "serverPath": "sobre-mi"
+            "overriddenRequest": {
+              "/": "index.html",
+              "/index.html": "index.html",
+              "/sobre-mi": "index.html",
+              "/sobre-mi/index.html": "index.html",
+              "/mi-trayectoria": "index.html",
+              "/mi-trayectoria/index.html": "index.html",
+              "/aprender": "index.html",
+              "/aprender/index.html": "index.html",
+              "/mis-proyectos": "index.html",
+              "/mis-proyectos/index.html": "index.html"
+            }
           }
         }
       }
