@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2.0.4
+
+- Migrate to builder `aws-deploy` and update workflow.
+
 ## 2.0.3
 
 - Updated deploy-url to avoid redirection.
