@@ -1,6 +1,6 @@
 # Presentacion
 
-Angular web page that contains the home and my trayectory pages. Deployed to <https://jaimeelingeniero.es>
+Angular web page that contains the home and other main pages on the top navigation. Deployed to <https://jaimeelingeniero.es>
 
 [![Build And Deploy](https://github.com/jaimemartinmartin15/Presentacion/actions/workflows/build-and-publish.yml/badge.svg)](https://github.com/jaimemartinmartin15/Presentacion/actions/workflows/build-and-publish.yml)
 
@@ -49,5 +49,3 @@ When pushing the tag to the remote, it will trigger the workflow **build-and-pub
 ### build-and-publish.yml
 
 Builds and deploys the application to the server.
-
-Basically, it copies the files in the `dist` folder and puts them in `/` folder in the server.
