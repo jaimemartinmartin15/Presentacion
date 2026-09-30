@@ -55,27 +55,27 @@
               {
                 "glob": "**/*",
                 "input": "src/assets/favicons",
-                "output": "/presentacion/assets/favicons/"
+                "output": "/assets/favicons/"
               },
               {
                 "glob": "**/*",
                 "input": "src/app/home/assets",
-                "output": "/presentacion/assets/home/"
+                "output": "/assets/home/"
               },
               {
                 "glob": "**/*",
                 "input": "src/app/my-trayectory/assets",
-                "output": "/presentacion/assets/my-trayectory/"
+                "output": "/assets/my-trayectory/"
               },
               {
                 "glob": "**/*",
                 "input": "src/app/my-projects/assets",
-                "output": "/presentacion/assets/my-projects/"
+                "output": "/assets/my-projects/"
               },
               {
                 "glob": "**/*",
                 "input": "src/app/learning/assets",
-                "output": "/presentacion/assets/learning/"
+                "output": "/assets/learning/"
               }
             ],
             "styles": ["src/styles.scss"],
@@ -128,19 +128,16 @@
           "options": {
             "serverSegment": "presentacion",
             "distFolder": "dist/presentacion/browser",
-            "overriddenRequest": {
-              "/": "index.html",
-              "/index.html": "index.html",
-              "/sobre-mi": "index.html",
-              "/sobre-mi/index.html": "index.html",
-              "/mi-trayectoria": "index.html",
-              "/mi-trayectoria/index.html": "index.html",
-              "/aprender": "index.html",
-              "/aprender/index.html": "index.html",
-              "/mis-proyectos": "index.html",
-              "/mis-proyectos/index.html": "index.html",
-              "/3rdpartylicenses.txt": "3rdpartylicenses.txt"
-            },
+            "overriddenRequest": [
+              ["/", "index.html"],
+              ["/index.html", "index.html"],
+              ["/sobre-mi*", "index.html"],
+              ["/mi-trayectoria*", "index.html"],
+              ["/aprender*", "index.html"],
+              ["/mis-proyectos*", "index.html"],
+              ["/assets/*", "assets/*"],
+              ["/3rdpartylicenses.txt", "3rdpartylicenses.txt"]
+            ],
             "noCache": ["index.html"]
           }
         }

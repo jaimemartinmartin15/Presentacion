@@ -1,10 +1,10 @@
 {
   "name": "presentacion",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "scripts": {
     "start": "ng serve -o",
     "start:public": "ng serve -o --host 0.0.0.0 --port 80",
-    "start:prod": "mv dist/presentacion dist/dist && mv dist/dist/browser dist/dist/presentacion && cd dist/dist/ && live-server . --open=presentacion",
+    "start:prod": "mv dist/presentacion dist/dist && mv dist/dist/browser dist/dist/presentacion && mv dist/dist/presentacion/assets dist/dist/assets && cd dist/dist/ && live-server . --open=presentacion",
     "icons": "ng run presentacion:icons",
     "build": "ng build --base-href / --deploy-url /presentacion/",
     "deploy": "ng deploy"
@@ -29,7 +29,7 @@
     "@angular/build": "^22.1.8",
     "@angular/cli": "^22.1.8",
     "@angular/compiler-cli": "^22.1.6",
-    "@jaimemartinmartin15/jei-devkit-angular-builders": "5.1.0",
+    "@jaimemartinmartin15/jei-devkit-angular-builders": "^5.2.0",
     "typescript": "~6.0.2"
   }
 }

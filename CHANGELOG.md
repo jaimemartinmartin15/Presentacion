@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 2.0.5
+
+- Use new version of `aws-deploy` builder.
+- Revert how assets are served.
+
 ## 2.0.4
 
 - Migrate to builder `aws-deploy` and update workflow.

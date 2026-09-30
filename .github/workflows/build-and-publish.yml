@@ -30,13 +30,7 @@ jobs:
       - name: Build
         run: npm run build
       - name: Prepare files to upload
-        run: |
-          cp ./dist/presentacion/3rdpartylicenses.txt ./dist/presentacion/browser/
-          # angular does not update paths to images besides using --deploy-url in build command
-          # thus, I need to add myself the prefix in href attributes, so that the browser request it correctly
-          # but in the build output I do not want to store them in a folder because that is created in S3 when uploading
-          mv ./dist/presentacion/browser/presentacion/* ./dist/presentacion/browser/
-          rm -rf ./dist/presentacion/browser/presentacion/
+        run: cp ./dist/presentacion/3rdpartylicenses.txt ./dist/presentacion/browser/
       - name: Set AWS credentials
         uses: aws-actions/configure-aws-credentials@v6
         with:
@@ -45,4 +39,4 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: eu-south-2
       - name: Deploy
-        run: npm run deploy
+        run: npm run deploy -- --dry-run=false

@@ -43,3 +43,4 @@ Thumbs.db
 
 # This repo
 src/svg-output/
+aws-deploy-builder-cloudfront-function*
